@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+<h1> <font color="red" size=8>Wiktor Mania</font></h1>
+<font color="green" size=5>
+<br>Dziś=new Date()--> Jest to komenda która pozwala nam wykonywać operacje związane z czasem
+<br>Dziś=dzis.getHours()--> Komenda ta zwraca aktualną godzinę(od 0 do 23)bez minut
+<br>Dziś=dzis.getMinutes()--> Komenda ta pokazuje nam aktualne minuty(od 0 do 59) bez godzin
+<br>Dziś=dzis.getMonth+1()-->Komenda pokazuje nam aktualny miesiąc
+<br>Dziś=dzis.getDate--> komenda zwraca nam dzień miesiąca
+</font>
+<script language="LiveScript">
+document.write("<br>Ostatno modifikowane ",document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
+</script>
+</body>
+</html>
